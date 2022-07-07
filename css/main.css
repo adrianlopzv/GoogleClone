@@ -48,7 +48,7 @@ nav .nav-right-section a {
 
 
 nav .nav-right-section .menu-icon {
-  background-image: url("./icon-menu.png");
+  background-image: url("./assets/icon-menu.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -62,8 +62,10 @@ nav .nav-right-section .menu-icon:hover {
 }
 
 nav .nav-right-section img {
-  border-radius: 50%;
   margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  margin-top: 2.9px;
 }
 
 main {
@@ -158,6 +160,11 @@ main .main-buttons button:hover {
   box-shadow: 0 1px 1px #b8b8b8;
   cursor: pointer;
   color: #000001;
+}
+
+main .main-buttons button a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 main .main-buttons .main-detail {
