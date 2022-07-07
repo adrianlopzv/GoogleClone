@@ -57,6 +57,10 @@ nav .nav-right-section .menu-icon {
   margin-left: 10px;
 }
 
+nav .nav-right-section .menu-icon:hover {
+  cursor: pointer;
+}
+
 nav .nav-right-section img {
   border-radius: 50%;
   margin-left: 10px;
@@ -76,7 +80,7 @@ main .main-logo {
 }
 
 main .main-logo img {
-  width: 480px;
+  width: 500px;
 }
 
 main .main-input {
@@ -213,7 +217,7 @@ footer ul li a:hover {
 @media screen and (max-width: 735px) {
 
   main .main-logo img {
-    width: 380px;
+    width: 400px;
   }
 
   footer {
