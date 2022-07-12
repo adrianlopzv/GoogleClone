@@ -30,7 +30,6 @@ header nav {
 }
 
 header nav .nav-right-section {
-  width: 250px;
   height: auto;
   display: flex;
   list-style: none;
@@ -47,22 +46,30 @@ nav .nav-right-section a {
   color: #000000;
 }
 
+
 nav .nav-right-section .menu-icon {
-  background-image: url("./icon-menu.png");
+  background-image: url("./assets/icon-menu.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 25px;
   height: 25px;
-}
-
-nav .nav-right-section img {
-  border-radius: 50%;
   margin-left: 10px;
 }
 
+nav .nav-right-section .menu-icon:hover {
+  cursor: pointer;
+}
+
+nav .nav-right-section img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  margin-top: 2.9px;
+}
+
 main {
-  margin-top: 80px;
+  margin-top: 65px;
   text-align: center;
 }
 
@@ -75,7 +82,7 @@ main .main-logo {
 }
 
 main .main-logo img {
-  width: 480px;
+  width: 500px;
 }
 
 main .main-input {
@@ -99,6 +106,7 @@ main .main-input input {
   border: none;
   outline: none;
   font-size: 16px;
+  color: #5f6368;
 }
 
 main .main-input-container:hover {
@@ -149,10 +157,30 @@ main .main-buttons button {
 
 main .main-buttons button:hover {
   border: 1px solid #c6c6c6;
-  /* Solid afecta al estado del color de la linea Color:solido */
   box-shadow: 0 1px 1px #b8b8b8;
   cursor: pointer;
   color: #000001;
+}
+
+main .main-buttons button a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+main .main-buttons .main-detail {
+  display: inline-block;
+  font-size: small;
+  color: #707070;
+  line-height: 28px;
+  margin-top: 25px;
+}
+
+main .main-buttons .main-detail a {
+  color: #4487f6;
+}
+
+main .main-buttons .main-detail a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -160,10 +188,9 @@ footer {
   height: 50px;
   position: absolute;
   bottom: 0;
-  /* al darle posisiotn absolute + botton 0 te aseguras que siempre
-  este hasta abajo de la paginas */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   font-size: 13px;
   background-color: #f2f2f2;
@@ -192,4 +219,16 @@ footer ul li a {
 
 footer ul li a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 735px) {
+
+  main .main-logo img {
+    width: 400px;
+  }
+
+  footer {
+    justify-content: space-evenly;
+    height: auto;
+  }
 }

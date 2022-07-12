@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Clone</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/x-icon" href="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png">
   </head>
   <body>
     <header>
@@ -14,14 +15,15 @@
             <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
           </li>
           <li>
-            <a href="https://photos.google.com/">Imagenes</a>
+            <a href="https://www.google.com.ar/imghp?hl=es-419&ogbl">Imagenes</a>
           </li>
-          <li class="menu-icon"><a href=""></a></li>
+          <li class="menu-icon" title="Google Apps"><a href="https://www.google.com.ar/intl/es-419/about/products"></a></li>
           <li>
             <a
               href="https://accounts.google.com/SignOutOptions?hl=es&continue=https://www.google.com%3Fhl%3Des"
               ><img
-                src="https://lh3.googleusercontent.com/ogw/ADGmqu8hwkK4hn83a2CAX7WdYS1P3zG7sWm_zcUShKlYBw=s32-c-mo"
+                src="https://w7.pngwing.com/pngs/802/786/png-transparent-google-account-google-search-customer-service-google-logo-login-button-blue-sphere-car-rental-thumbnail.png"
+                title="Cuenta de Google"
                 alt="Foto de Perfil"
             /></a>
           </li>
@@ -30,34 +32,37 @@
     </header>
     <main>
       <section class="main-logo">
-        <img src="./laborGoogle.jpg" alt="" />
+        <img src="./css/assets/labour-day-2022.png" title="Día del trabajador 2022" alt="Google Logo, Labour Day 2022"/>
       </section>
       <section class="main-input">
+        <form method=GET action="https://www.google.com/search">
         <div class="main-input-container">
-          <span class="search-icon"> </span>
-          <input type="text" />
+          <span class="search-icon"></span>
+          <input type="text" name=q maxlength=255 value=""/>
           <a class="micro-icon" href=""></a>
         </div>
       </section>
       <section class="main-buttons">
         <div>
-          <button>Buscar con Google</button>
+          <button><a>Buscar con Google</a></button>
         </div>
+      </form>
         <div>
-          <button>Me siento con suerte</button>
+          <button><a href="https://www.google.com/doodles">Me siento con suerte</a></button>
         </div>
+        <div class="main-detail">Clone de Google hecho por: <a href="https://www.linkedin.com/in/adrianlopzv/">Adrian Lopez</a></div>
       </section>
     </main>
     <footer>
       <ul class="footer-left">
-        <li><a href="">Publicidad</a></li>
-        <li><a href="">Negocios</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Como funciona la búsqueda</a></li>
+        <li><a href="https://ads.google.com/intl/es-419_ar/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a></li>
+        <li><a href="https://smallbusiness.withgoogle.com/intl/es-419_ar/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=AR#!/">Negocios</a></li>
+        <li><a href="https://about.google/?utm_source=google-AR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a></li>
+        <li><a href="https://www.google.com/search/howsearchworks/?fg=1">Como funciona la búsqueda</a></li>
       </ul>
       <ul class="footer-right">
-        <li><a href="">Privacidad</a></li>
-        <li><a href="">Terms</a></li>
+        <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></li>
+        <li><a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a></li>
         <li><a href="">Preferencias</a></li>
       </ul>
     </footer>
